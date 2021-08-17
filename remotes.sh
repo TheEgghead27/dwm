@@ -1,3 +1,3 @@
 #!/bin/bash
-git remote add origin https://git.suckless.org/dwm
-git remote add github https://github.com/TheEgghead27/dwm.git
+git remove rename origin github # assuming cloned from github
+git remote add origin https://git.suckless.org/dwm  # git pull from suckless
