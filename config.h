@@ -69,7 +69,7 @@ static const char *prtScr[] = {"spectacle", "-b", "-c"};
 static const char *prtReg[] = {"spectacle", "-b", "-c", "-r"};
 static const char *prtScrM[] = {"spectacle"};
 static const char *clrPck[] = {"kcolorchooser"};
-static const char *shutdown[] = {"/home/egg/.dwm/powermenu.sh"};
+static const char *shutdown[] = {"/usr/local/bin/powermenu"};
 
 /* module */
 #include "shiftview.c"
