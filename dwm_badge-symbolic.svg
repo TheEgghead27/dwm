@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright (c) 2014-2017, Laslo Hunhold <dev@frign.de> CC BY 4.0 -->
+
+<svg
+   width="96"
+   height="96"
+   version="1.1"
+   id="svg51"
+   sodipodi:docname="dwm_badge-symbolic.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs55" />
+  <sodipodi:namedview
+     id="namedview53"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.9408609"
+     inkscape:cx="-18.290853"
+     inkscape:cy="-13.911353"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg51"
+     height="96px" />
+  <path
+     d="M 0,44 H 24 V 28 h 8 v 32 h 8 V 44 h 8 v 16 h 8 V 44 H 96 V 68 H 88 V 52 H 80 V 68 H 72 V 52 H 64 V 68 H 0 Z m 24,8 H 8 v 8 h 16 z"
+     fill="#dddddd"
+     id="path49" />
+</svg>
