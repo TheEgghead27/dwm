@@ -35,7 +35,7 @@ static const Rule rules[] = {
 	{ "Wine", 	 	NULL,       	0,            	0,            1, 		-1 },
 	{ "Steam", 	 	NULL,       	0,            	0,            1, 		-1 },
 	{ NULL,			NULL,		"Picture in picture", 0,      1, 		-1 },
-	{ NULL,			NULL,		"Picture-in-picture", 0,      1, 		-1 },
+	{ NULL,			NULL,		"Picture-in-Picture", 0,      1, 		-1 },
 };
 
 /* layout(s) */
