@@ -36,6 +36,7 @@ static const Rule rules[] = {
 	{ "Steam", 	 	NULL,       	0,            	0,            1, 		-1 },
 	{ NULL,			NULL,		"Picture in picture", 0,      1, 		-1 },
 	{ NULL,			NULL,		"Picture-in-Picture", 0,      1, 		-1 },
+	{ NULL,			NULL,		"win0",		0,	      1, 		-1 },
 };
 
 /* layout(s) */
