@@ -113,6 +113,36 @@ typedef struct {
 	void (*arrange)(Monitor *);
 } Layout;
 
+struct Monitor {
+	char ltsymbol[16];
+	float mfact;
+	int nmaster;
+	int num;
+	int by;               /* bar geometry */
+	int mx, my, mw, mh;   /* screen size */
+	int wx, wy, ww, wh;   /* window area  */
+        int gappih;           /* horizontal gap between windows */
+        int gappiv;           /* vertical gap between windows */
+        int gappoh;           /* horizontal outer gaps */
+        int gappov;           /* vertical outer gaps */
+	unsigned int seltags;
+	unsigned int sellt;
+	unsigned int tagset[2];
+    	int previewshow;
+	int showbar;
+	int topbar;
+	Client *clients;
+	Client *sel;
+	Client *stack;
+	Monitor *next;
+	Window barwin;
+        Window tagwin;
+        //change 'LENGTH(tags)' to the actual number of tags you have (9 by def)
+        //if you wish to move this below config.h
+        Pixmap tagmap[9];
+        const Layout *lt[2];
+};
+
 typedef struct {
 	const char *class;
 	const char *instance;
@@ -262,36 +292,6 @@ static Window root, wmcheckwin;
 
 /* configuration, allows nested code to access above variables */
 #include "config.h"
-
-/* We only move this here to get the length of the `tags` array, which probably
- * will generate compatibility issues with other patches. To avoid it, I
- * reccomend patching this at the end or continue with the comment below */
-struct Monitor {
-	char ltsymbol[16];
-	float mfact;
-	int nmaster;
-	int num;
-	int by;               /* bar geometry */
-	int mx, my, mw, mh;   /* screen size */
-	int wx, wy, ww, wh;   /* window area  */
-	unsigned int seltags;
-	unsigned int sellt;
-	unsigned int tagset[2];
-	int previewshow;
-	int showbar;
-	int topbar;
-	Client *clients;
-	Client *sel;
-	Client *stack;
-	Monitor *next;
-	Window barwin;
-	Window tagwin;
-	//change 'LENGTH(tags)' to the actual number of tags you have (9 by def)
-	//if you wish to move this below config.h
-	Pixmap tagmap[LENGTH(tags)];
-	const Layout *lt[2];
-};
-
 
 /* compile-time check if all tags fit into an unsigned int bit array. */
 struct NumTags { char limitexceeded[LENGTH(tags) > 31 ? -1 : 1]; };
