@@ -1,0 +1,13 @@
+# ide folder
+.idea/
+
+# binaries
+dwm
+*.o
+
+# patches
+.diff
+.patch
+
+# config.h (prefer .def)
+config.h
