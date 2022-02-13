@@ -6,8 +6,8 @@ dwm
 *.o
 
 # patches
-.diff
-.patch
+*.diff
+*.patch
 
 # config.h (prefer .def)
 config.h
